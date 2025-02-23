@@ -238,7 +238,7 @@ plot(fitted(lm_mod1), rstandard(lm_mod1), xlab = "Fitted",
 abline(h = 0, col = "hotpink")
 ```
 
-![](Images/Linear Model Plot.png)<!-- -->
+![](<Images/Linear Model Plot.png>)
 *The residuals are scattered around the horizontal zero line, forming a
 horizontal band without any clear pattern or trend across the range of
 fitted values. This suggests that the assumptions of constant variance
@@ -259,7 +259,7 @@ hist(rstandard(lm_mod1), main = "Histogram", xlab = "Standardized Residuals",
      col = "lightblue")
 ```
 
-![](./QQ Plot.png)<!-- -->
+![](<Images/QQ Plot.png>)
 *The plot on the left is a Q-Q (Quantile-Quantile) plot of standardized
 residuals against the theoretical quantiles of a normal distribution. In
 this plot there are points towards the tails that are deviating
@@ -313,7 +313,7 @@ library(corrplot)
 corrplot(cor_matrix, method = "square")
 ```
 
-![](Formula_for_the_Podium_files/figure-gfm/Correlation Plot.png)<!-- -->
+![](<Images/Correlation Plot.png>)
 
 **Outliers**
 
@@ -455,7 +455,7 @@ library(faraway)
 halfnorm(hatv, nlab = 2, ylab = "Leverages")
 ```
 
-![](Formula_for_the_Podium_files/figure-gfm/Leverage Point Plot.png)<!-- -->
+![](<Images/Leverage Point Plot.png>)
 *High leverage points may or may not be influential.*
 
 **Bonferroni Value**
@@ -525,7 +525,7 @@ library(faraway)
 halfnorm(cook, nlab = 2, ylab = "Cook's distances")
 ```
 
-![](Formula_for_the_Podium_files/figure-gfm/Cook's Distance Plot.png)<!-- -->
+![](<Images/Cook's Distance Plot.png>)
 *Influential point from the above plot is observation number 82.*
 
 **Influential Point:**
@@ -727,7 +727,7 @@ AIC
 plot(AIC ~ I(s - 1), ylab = "AIC", xlab = "Number of Predictors", col = "blue")
 ```
 
-![](Formula_for_the_Podium_files/figure-gfm/AIC Values Plot.png)<!-- -->
+![](<Images/AIC Values Plot.png>)
 *The AIC (Akaike Information Criterion) test helps identify the best
 combination of predictors for a model by considering both the goodness
 of fit and the complexity of the model. In this case, the AIC values
@@ -812,7 +812,7 @@ BIC
 plot(BIC ~ I(s - 1), ylab= "BIC", xlab = "Number of Predictors", col = "blue")
 ```
 
-![](Formula_for_the_Podium_files/figure-gfm/BIC Values Plot.png)<!-- -->
+![](<Images/BIC Values Plot.png>)
 *The third model has the lowest BIC value of 579.71325. The predictors
 are statusId, position & rank.* *The Bayesian Information Criterion
 (BIC) helps determine the best combination of predictors for a model by
@@ -1127,7 +1127,7 @@ require(MASS)
 boxcox_results_statid <- boxcox(lmod_statid, plotit = TRUE)
 ```
 
-![](Formula_for_the_Podium_files/figure-gfm/Box Cox.png)<!-- -->
+![](<Images/Box Cox.png>)
 
 ``` r
 lamda_statid <- boxcox_results_statid$x[which.max(boxcox_results_statid$y)]
@@ -1183,7 +1183,7 @@ plot(fitted(lmodTrans_statid), rstandard(lmodTrans_statid), xlab = "Fitted",
 abline(h = 0, col = "peru")
 ```
 
-![](Formula_for_the_Podium_files/figure-gfm/Transformed Model Plot.png)<!-- -->
+![](<Images/Transformed Model Plot.png>)
 
 ``` r
 # Set up layout for two panels side by side
@@ -1196,7 +1196,7 @@ hist(rstandard(lmodTrans_statid), main = "Histogram ",
      xlab = "Standardized Residuals" ,col = "plum")
 ```
 
-![](Formula_for_the_Podium_files/figure-gfm/Transformed Model QQ Plot.png)<!-- -->
+![](<Images/Transformed Model QQ Plot.png>)
 
 ``` r
 par(mfrow = c(1, 1))
