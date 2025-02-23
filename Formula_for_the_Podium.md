@@ -238,7 +238,7 @@ abline(h = 0, col = "hotpink")
 ```
 
 ![](Formula_for_the_Podium_files/figure-gfm/Linear Model Plot.png)<!-- -->
-![](Linear Model Plot.png)
+![](Linear Model Plot.png, raw = TRUE)
 *The residuals are scattered around the horizontal zero line, forming a
 horizontal band without any clear pattern or trend across the range of
 fitted values. This suggests that the assumptions of constant variance
