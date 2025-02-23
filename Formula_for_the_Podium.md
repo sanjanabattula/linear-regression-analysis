@@ -258,7 +258,7 @@ hist(rstandard(lm_mod1), main = "Histogram", xlab = "Standardized Residuals",
      col = "lightblue")
 ```
 
-![](Formula_for_the_Podium_files/figure-gfm/QQ Plot.png)<!-- -->
+![](./QQ Plot.png)<!-- -->
 *The plot on the left is a Q-Q (Quantile-Quantile) plot of standardized
 residuals against the theoretical quantiles of a normal distribution. In
 this plot there are points towards the tails that are deviating
