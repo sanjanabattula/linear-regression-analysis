@@ -237,7 +237,7 @@ plot(fitted(lm_mod1), rstandard(lm_mod1), xlab = "Fitted",
 abline(h = 0, col = "hotpink")
 ```
 
-![](Linear Model Plot.png)<!-- -->
+![](Images/Linear Model Plot.png)<!-- -->
 *The residuals are scattered around the horizontal zero line, forming a
 horizontal band without any clear pattern or trend across the range of
 fitted values. This suggests that the assumptions of constant variance
