@@ -1,0 +1,85 @@
+Pharmacy Desert Mapping & Simulation — Virginia Case Study
+This project identifies and visualizes pharmacy deserts across Virginia, using geospatial and demographic data to assess disparities in access to pharmacy services—especially among veterans, rural residents, and low-income communities. Conducted in collaboration with VCU School of Pharmacy and the U.S. Department of Veterans Affairs, the results were published in the Journal of the American Pharmacists Association and informed state-level healthcare policy, including use by the Governor of Virginia.
+
+📌 Project Goals
+Classify areas as pharmacy deserts based on spatial and socioeconomic criteria
+
+Quantify disparities in pharmacy access by demographics and geography
+
+Simulate optimal pharmacy placement using Monte Carlo methods
+
+Provide policymakers with a data-driven tool for strategic resource allocation
+
+🧰 Tech Stack & Tools
+Language: R
+
+Key Packages: sf, dplyr, ggplot2, tidycensus, tigris, ggmap, data.table
+
+Visualization: Custom heatmaps, spatial overlays
+
+Statistical Methods: Wilcoxon rank-sum test, subgroup analysis
+
+Simulation: Monte Carlo framework (10,000+ iterations)
+
+🧪 Methodology
+Data Integration
+
+Virginia Board of Pharmacy facility data
+
+2022 American Community Survey (ACS) demographic data (tract-level)
+
+Urban/rural classifications via Census geography
+
+Pharmacy Desert Definition
+
+Deserts defined by:
+
+Low-income threshold (based on ACS)
+
+Distance to nearest pharmacy (1, 5, or 10 miles depending on urbanicity)
+
+Geospatial Modeling
+
+Used the sf package to calculate Euclidean and road network distances from census tract centroids to pharmacy locations
+
+Classified pharmacy deserts and mapped them using ggplot2
+
+Simulation Engine
+
+Ran 10,000 Monte Carlo simulations to place potential pharmacy sites in desert regions
+
+Measured population “rescued” from desert status per iteration
+
+Developed population-weighted impact scoring to rank optimal locations
+
+Equity & Disparity Analysis
+
+Used Wilcoxon rank-sum tests to compare desert vs. non-desert tracts
+
+Conducted subgroup analysis on race, insurance status, income, and age
+
+📊 Results
+~15% of Virginia’s VA-enrolled population lives in pharmacy deserts
+
+Disproportionate impact on rural residents, racial/ethnic minorities, and low-income groups
+
+Identified 44 high-impact zones for potential pharmacy placement—each benefiting 10,000+ residents
+
+🏆 Impact
+Peer-reviewed publication in the Journal of the American Pharmacists Association
+
+Used by the Deputy Executive Director of the Virginia Board of Pharmacy
+
+Informed Governor-level health equity initiatives in Virginia
+
+
+Repository Structure 
+├── data/                   # Input data files (cleaned for sharing)
+├── scripts/                # R scripts for processing, modeling, and simulation
+├── visualizations/         # Static maps and dashboards
+├── analysis/               # Statistical output and summary tables
+├── report/                 # Publication-ready figures and write-up
+└── README.md
+
+
+
